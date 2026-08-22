@@ -1,0 +1,2639 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xml:base='https://localhost:8080' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <CascadingFilters />
+    <CascadingFiltersHamburgerUI />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/project-salary?rev=1.0' id='project-salary' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top/Bottom 10' datatype='string' name='[Parameter 0608341527924736]' param-domain-type='list' role='measure' type='nominal' value='&quot;Top 10&quot;'>
+        <calculation class='tableau' formula='&quot;Top 10&quot;' />
+        <members>
+          <member value='&quot;Top 10&quot;' />
+          <member value='&quot;Bottom 10&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='salary_research_tableau (1)' inline='true' name='federated.1mes8eq1novha717cegds1toloe1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='salary_research_tableau (1)' name='textscan.0tb8h190pwjwk814givlj0hh4m9b'>
+            <connection class='textscan' directory='C:/Users/Руслана/Downloads' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tb8h190pwjwk814givlj0hh4m9b' name='salary_research_tableau (1).xls' table='[salary_research_tableau (1).xls]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+            <column datatype='string' name='Показник' ordinal='0' />
+            <column datatype='string' name='Період' ordinal='1' />
+            <column datatype='string' name='Стать' ordinal='2' />
+            <column datatype='string' name='Територіальний розріз' ordinal='3' />
+            <column datatype='string' name='Категорія розрізу' ordinal='4' />
+            <column datatype='string' name='Розріз' ordinal='5' />
+            <column datatype='string' name='Періодичність' ordinal='6' />
+            <column datatype='string' name='Одиниця виміру' ordinal='7' />
+            <column datatype='string' name='Масштабування' ordinal='8' />
+            <column datatype='string' name='Кількість десяткових знаків' ordinal='9' />
+            <column datatype='string' name='Спеціальне значення даних' ordinal='10' />
+            <column datatype='string' name='Примітки часового ряду' ordinal='11' />
+            <column datatype='string' name='Примітки спостереження' ordinal='12' />
+            <column datatype='string' name='Причина пропуску' ordinal='13' />
+            <column datatype='integer' name='Рік' ordinal='14' />
+            <column datatype='real' name='Заробітна плата' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Показник</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Показник]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Показник</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Період</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Період]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Період</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Стать</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Стать]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Стать</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Територіальний розріз</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Територіальний розріз]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Територіальний розріз</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Категорія розрізу</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Категорія розрізу]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Категорія розрізу</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Розріз</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Розріз]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Розріз</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Періодичність</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Періодичність]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Періодичність</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Одиниця виміру</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Одиниця виміру]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Одиниця виміру</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Масштабування</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Масштабування]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Масштабування</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Кількість десяткових знаків</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Кількість десяткових знаків]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Кількість десяткових знаків</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Спеціальне значення даних</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Спеціальне значення даних]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Спеціальне значення даних</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Примітки часового ряду</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Примітки часового ряду]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Примітки часового ряду</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Примітки спостереження</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Примітки спостереження]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Примітки спостереження</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Причина пропуску</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Причина пропуску]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Причина пропуску</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Рік</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Рік]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Рік</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Заробітна плата</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Заробітна плата]</local-name>
+            <parent-name>[salary_research_tableau (1).xls]</parent-name>
+            <remote-alias>Заробітна плата</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Top/Bottom 10' datatype='boolean' name='[Calculation_0608341528530945]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 0608341527924736] = &quot;Top 10&quot; THEN&#13;&#10;    RANK(SUM([Заробітна плата]), &apos;desc&apos;) &lt;= 10&#13;&#10;ELSE&#13;&#10;    RANK(SUM([Заробітна плата]), &apos;asc&apos;) &lt;= 10&#13;&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Gender Pay Gap %' datatype='real' name='[Calculation_0608341537574915]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(&#13;&#10;    { FIXED [Рік] : AVG(IF [Стать] = &quot;Чоловіки&quot; THEN [Заробітна плата] END) }&#13;&#10;    -&#13;&#10;    { FIXED [Рік] : AVG(IF [Стать] = &quot;Жінки&quot; THEN [Заробітна плата] END) }&#13;&#10;)&#13;&#10;/&#13;&#10;{ FIXED [Рік] : AVG(IF [Стать] = &quot;Чоловіки&quot; THEN [Заробітна плата] END) }' />
+      </column>
+      <column caption='salary_research_tableau (1).xls' datatype='table' name='[__tableau_internal_object_id__].[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+      <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Категорія розрізу, Розріз'>
+          <field>[Категорія розрізу]</field>
+          <field>[Розріз]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Руслана/Desktop/Salary-project/tableau/project-salary.twb Files/Data/TableauTemp/#TableauTemp_0plt04706qqswc1gqb7x11pniju7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2026 10:24:48 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Показник</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Показник]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Показник</remote-alias>
+              <ordinal>0</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Період</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Період]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Період</remote-alias>
+              <ordinal>1</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Стать</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Стать]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Стать</remote-alias>
+              <ordinal>2</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Територіальний розріз</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Територіальний розріз]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Територіальний розріз</remote-alias>
+              <ordinal>3</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Категорія розрізу</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Категорія розрізу]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Категорія розрізу</remote-alias>
+              <ordinal>4</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Розріз</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Розріз]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Розріз</remote-alias>
+              <ordinal>5</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>207</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Періодичність</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Періодичність]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Періодичність</remote-alias>
+              <ordinal>6</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Одиниця виміру</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Одиниця виміру]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Одиниця виміру</remote-alias>
+              <ordinal>7</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Масштабування</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Масштабування]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Масштабування</remote-alias>
+              <ordinal>8</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Кількість десяткових знаків</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Кількість десяткових знаків]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Кількість десяткових знаків</remote-alias>
+              <ordinal>9</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Спеціальне значення даних</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Спеціальне значення даних]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Спеціальне значення даних</remote-alias>
+              <ordinal>10</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Примітки часового ряду</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Примітки часового ряду]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Примітки часового ряду</remote-alias>
+              <ordinal>11</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Примітки спостереження</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Примітки спостереження]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Примітки спостереження</remote-alias>
+              <ordinal>12</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Причина пропуску</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Причина пропуску]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Причина пропуску</remote-alias>
+              <ordinal>13</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Рік</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Рік]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Рік</remote-alias>
+              <ordinal>14</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Заробітна плата</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Заробітна плата]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Заробітна плата</remote-alias>
+              <ordinal>15</ordinal>
+              <family>salary_research_tableau (1).xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>763</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Стать:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Чоловіки&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Жінки&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Top/Bottom 10' datatype='string' name='[Parameter 0608341527924736]' param-domain-type='list' role='measure' type='nominal' value='&quot;Top 10&quot;'>
+          <calculation class='tableau' formula='&quot;Top 10&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='salary_research_tableau (1).xls' id='salary_research_tableau (1).xls_12068360A1D44B3FAE01ABF00CA08DAA'>
+            <properties context=''>
+              <relation connection='textscan.0tb8h190pwjwk814givlj0hh4m9b' name='salary_research_tableau (1).xls' table='[salary_research_tableau (1).xls]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+                  <column datatype='string' name='Показник' ordinal='0' />
+                  <column datatype='string' name='Період' ordinal='1' />
+                  <column datatype='string' name='Стать' ordinal='2' />
+                  <column datatype='string' name='Територіальний розріз' ordinal='3' />
+                  <column datatype='string' name='Категорія розрізу' ordinal='4' />
+                  <column datatype='string' name='Розріз' ordinal='5' />
+                  <column datatype='string' name='Періодичність' ordinal='6' />
+                  <column datatype='string' name='Одиниця виміру' ordinal='7' />
+                  <column datatype='string' name='Масштабування' ordinal='8' />
+                  <column datatype='string' name='Кількість десяткових знаків' ordinal='9' />
+                  <column datatype='string' name='Спеціальне значення даних' ordinal='10' />
+                  <column datatype='string' name='Примітки часового ряду' ordinal='11' />
+                  <column datatype='string' name='Примітки спостереження' ordinal='12' />
+                  <column datatype='string' name='Причина пропуску' ordinal='13' />
+                  <column datatype='integer' name='Рік' ordinal='14' />
+                  <column datatype='real' name='Заробітна плата' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1mes8eq1novha717cegds1toloe1'>
+      <datasources>
+        <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+        <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+        <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]'>
+        <groupfilter function='member' level='[none:Рік:ok]' member='2016' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]'>
+        <groupfilter function='member' level='[none:Стать:nk]' member='&quot;Жінки&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Порівняння рівня ЗП Чол vs Жін'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>Порівняння рівня ЗП Чоловіків vs Жінок</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/project-salary/vs?rev=' id='132716165' path='/workbooks/project-salary' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+            <column-instance column='[Заробітна плата]' derivation='Avg' name='[avg:Заробітна плата:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[Заробітна плата]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#f5f5f5' />
+            <format attr='stroke-size' value='1' />
+            <format attr='stroke-color' value='#e6e6e6' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='title' class='0' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' scope='rows' value='Середня заробітна плата' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='text-format' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e64b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#e6e6e6' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' />
+              <text column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Regular' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]</rows>
+        <cols>([federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk] / [federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok])</cols>
+      </table>
+      <simple-id uuid='{B4ED0061-7CED-4D48-B27E-B10C5009AA53}' />
+    </worksheet>
+    <worksheet name='Рівень заробітної плати &amp; Види діяльності'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>Рівень заробітної плати &amp; Види діяльності</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/project-salary/sheet4?rev=' id='132716164' path='/workbooks/project-salary' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+            <column-instance column='[Заробітна плата]' derivation='Avg' name='[avg:Заробітна плата:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Категорія розрізу]' derivation='None' name='[none:Категорія розрізу:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Розріз]' derivation='None' name='[none:Розріз:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[Заробітна плата]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Категорія розрізу]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Розріз]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]'>
+            <groupfilter function='member' level='[none:Категорія розрізу:nk]' member='&quot;Вид економічної діяльності&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Будівництво&quot;</bucket>
+              <bucket>&quot;Водопостачання; каналізація, поводження з відходами&quot;</bucket>
+              <bucket>&quot;Державне управління й оборона; обов&apos;язкове соціальне страхування&quot;</bucket>
+              <bucket>&quot;Діяльність у сфері адміністративного та допоміжного обслуговування&quot;</bucket>
+              <bucket>&quot;Добувна промисловість і розроблення кар&apos;єрів&quot;</bucket>
+              <bucket>&quot;Інформація та телекомунікації&quot;</bucket>
+              <bucket>&quot;Мистецтво, спорт, розваги та відпочинок&quot;</bucket>
+              <bucket>&quot;Надання інших видів послуг&quot;</bucket>
+              <bucket>&quot;Операції з нерухомим майном&quot;</bucket>
+              <bucket>&quot;Оптова та роздрібна торгівля; ремонт автотранспортних засобів і мотоциклів&quot;</bucket>
+              <bucket>&quot;Освіта&quot;</bucket>
+              <bucket>&quot;Охорона здоров&apos;я та надання соціальної допомоги&quot;</bucket>
+              <bucket>&quot;Переробна промисловість&quot;</bucket>
+              <bucket>&quot;Постачання електроенергії, газу, пари та кондиційованого повітря&quot;</bucket>
+              <bucket>&quot;Промисловість&quot;</bucket>
+              <bucket>&quot;Професійна, наукова та технічна діяльність&quot;</bucket>
+              <bucket>&quot;Сільське господарство, лісове господарство та рибне господарство&quot;</bucket>
+              <bucket>&quot;Тимчасове розміщування й організація харчування&quot;</bucket>
+              <bucket>&quot;Транспорт, складське господарство, поштова та кур&apos;єрська діяльність&quot;</bucket>
+              <bucket>&quot;Фінансова та страхова діяльність&quot;</bucket>
+              <bucket>&quot;Усього&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' value='78' />
+            <format attr='text-format' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]' value='468' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+              <text column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Regular' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk] / [federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk])</rows>
+        <cols>([federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok] / [federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk])</cols>
+      </table>
+      <simple-id uuid='{CC417D11-8AC1-4793-B9D1-23CB43004FB5}' />
+    </worksheet>
+    <worksheet name='Рівень заробітної плати &amp; Вік'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>Рівень заробітної плати &amp; Вік</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/project-salary/sheet1?rev=' id='132716161' path='/workbooks/project-salary' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+            <column-instance column='[Заробітна плата]' derivation='Avg' name='[avg:Заробітна плата:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Категорія розрізу]' derivation='None' name='[none:Категорія розрізу:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Розріз]' derivation='None' name='[none:Розріз:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[Заробітна плата]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Категорія розрізу]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Розріз]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]'>
+            <groupfilter function='member' level='[none:Категорія розрізу:nk]' member='&quot;Вікова група&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;До 25 років&quot;</bucket>
+              <bucket>&quot;25-34 років&quot;</bucket>
+              <bucket>&quot;35-44 років&quot;</bucket>
+              <bucket>&quot;45-54 років&quot;</bucket>
+              <bucket>&quot;55-59 років&quot;</bucket>
+              <bucket>&quot;60-64 роки&quot;</bucket>
+              <bucket>&quot;65 років і старші&quot;</bucket>
+              <bucket>&quot;Усього&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' scope='rows' value='Середня заробітна плата' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#e6e6e6' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' />
+              <text column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Regular' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]</rows>
+        <cols>([federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk] / ([federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk] / [federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]))</cols>
+      </table>
+      <simple-id uuid='{777B8754-ED70-4F06-BF05-0691E385EB18}' />
+    </worksheet>
+    <worksheet name='Рівень заробітної плати &amp; Освіта'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>Рівень заробітної плати &amp; Освіта</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/project-salary/sheet0?rev=' id='132716160' path='/workbooks/project-salary' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+            <column-instance column='[Заробітна плата]' derivation='Avg' name='[avg:Заробітна плата:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Категорія розрізу]' derivation='None' name='[none:Категорія розрізу:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Розріз]' derivation='None' name='[none:Розріз:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[Заробітна плата]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Категорія розрізу]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Розріз]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]'>
+            <groupfilter function='member' level='[none:Категорія розрізу:nk]' member='&quot;Рівень освіти&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' scope='rows' value='Середня заробітна плата' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' />
+              <text column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+                <format attr='font-family' value='Tableau Regular' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]</rows>
+        <cols>([federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk] / ([federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk] / [federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]))</cols>
+      </table>
+      <simple-id uuid='{E5EFB179-5EFB-46A0-9162-9CB75A4C9596}' />
+    </worksheet>
+    <worksheet name='Рівень заробітної плати &amp; Професія (Top/Bottom 10)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'><![CDATA[Рівень заробітної плати & Професія <]]></run>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>[Parameters].[Parameter 0608341527924736]</run>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>&gt; &lt;</run>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</run>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>&gt; &lt;</run>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</run>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/project-salary/TopBottom10?rev=' id='132716163' path='/workbooks/project-salary' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Top/Bottom 10' datatype='string' name='[Parameter 0608341527924736]' param-domain-type='list' role='measure' type='nominal' value='&quot;Top 10&quot;'>
+              <calculation class='tableau' formula='&quot;Top 10&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+            <column caption='Top/Bottom 10' datatype='boolean' name='[Calculation_0608341528530945]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 0608341527924736] = &quot;Top 10&quot; THEN&#13;&#10;    RANK(SUM([Заробітна плата]), &apos;desc&apos;) &lt;= 10&#13;&#10;ELSE&#13;&#10;    RANK(SUM([Заробітна плата]), &apos;asc&apos;) &lt;= 10&#13;&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[Заробітна плата]' derivation='Avg' name='[avg:Заробітна плата:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Категорія розрізу]' derivation='None' name='[none:Категорія розрізу:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Розріз]' derivation='None' name='[none:Розріз:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0608341528530945]' derivation='User' name='[usr:Calculation_0608341528530945:nk]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column datatype='real' name='[Заробітна плата]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Категорія розрізу]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Розріз]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]'>
+            <groupfilter function='member' level='[none:Категорія розрізу:nk]' member='&quot;Професії та професійні групи&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[usr:Calculation_0608341528530945:nk]'>
+            <groupfilter function='member' level='[usr:Calculation_0608341528530945:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[usr:Calculation_0608341528530945:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' scope='rows' value='Середня заробітна плата' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='text-format' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#e6e6e6' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' />
+              <text column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Regular' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]</rows>
+        <cols>([federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk] / [federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk])</cols>
+      </table>
+      <simple-id uuid='{BEBE6A51-07CC-4319-B1E3-4B8A5C20AD45}' />
+    </worksheet>
+    <worksheet name='Рівень заробітної плати &amp; Стаж'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555' fontname='Tableau Semibold' fontsize='14'>Рівень заробітної плати &amp; Стаж</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/project-salary/sheet2?rev=' id='132716162' path='/workbooks/project-salary' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salary_research_tableau (1)' name='federated.1mes8eq1novha717cegds1toloe1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mes8eq1novha717cegds1toloe1'>
+            <column-instance column='[Заробітна плата]' derivation='Avg' name='[avg:Заробітна плата:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Категорія розрізу]' derivation='None' name='[none:Категорія розрізу:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Розріз]' derivation='None' name='[none:Розріз:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Рік]' derivation='None' name='[none:Рік:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Стать]' derivation='None' name='[none:Стать:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[Заробітна плата]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Категорія розрізу]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Розріз]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Рік]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Стать]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]'>
+            <groupfilter function='member' level='[none:Категорія розрізу:nk]' member='&quot;Стаж роботи&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;До 2 років&quot;</bucket>
+              <bucket>&quot;2-4 років&quot;</bucket>
+              <bucket>&quot;5-9 років&quot;</bucket>
+              <bucket>&quot;10-14 років&quot;</bucket>
+              <bucket>&quot;15-19 років&quot;</bucket>
+              <bucket>&quot;20 і більше років&quot;</bucket>
+              <bucket>&quot;Усього&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</column>
+            <column>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' scope='rows' value='Середня заробітна плата' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#e6e6e6' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' />
+              <text column='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Regular' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]</rows>
+        <cols>([federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk] / ([federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk] / [federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]))</cols>
+      </table>
+      <simple-id uuid='{23C7E96A-C0ED-48F6-B981-E635F3D7786E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Рівень заробітної плати &amp; Освіта'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' type='filter' values='cascading' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[:Measure Names]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:qk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{19E1D1D6-3774-4114-B514-917779FDA57E}' />
+    </window>
+    <window class='worksheet' name='Рівень заробітної плати &amp; Вік'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' type='filter' values='cascading' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BCEBA1E3-4457-4722-A858-9C9AD2D45B7C}' />
+    </window>
+    <window class='worksheet' name='Рівень заробітної плати &amp; Стаж'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2085727D-5B36-4406-952C-B19A8275BA62}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Рівень заробітної плати &amp; Професія (Top/Bottom 10)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' type='filter' values='cascading' />
+            <card mode='compact' param='[Parameters].[Parameter 0608341527924736]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[usr:Calculation_0608341528530945:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F9A5F158-8759-4F9D-9EC5-6A352818624B}' />
+    </window>
+    <window class='worksheet' name='Рівень заробітної плати &amp; Види діяльності'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[avg:Заробітна плата:qk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Категорія розрізу:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Розріз:nk]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]</field>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{186B6531-BB0A-4642-95C8-B7A72E72DA41}' />
+    </window>
+    <window class='worksheet' name='Порівняння рівня ЗП Чол vs Жін'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='filter' />
+            <card param='[federated.1mes8eq1novha717cegds1toloe1].[none:Рік:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mes8eq1novha717cegds1toloe1].[none:Стать:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{09B4A3B8-925F-48CC-B847-2631B31B8644}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Порівняння рівня ЗП Чол vs Жін' width='192'>
+      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
+      ZeZd4nfiX2SsZKNJWQsEAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Рівень заробітної плати &amp; Види діяльності' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Рівень заробітної плати &amp; Вік' width='192'>
+      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
+      B1UebT0s/IaaAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Рівень заробітної плати &amp; Освіта' width='192'>
+      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
+      C3dpAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Рівень заробітної плати &amp; Професія (Top/Bottom 10)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Рівень заробітної плати &amp; Стаж' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
