@@ -50,8 +50,8 @@
 ### Project Outcomes
 
 На основі даного дослідження було реалізовано:
-- 📄 [Article](https://www.observer.in.ua/2026/08/28/%d0%b0%d0%bd%d0%b0%d0%bb%d1%96%d0%b7-%d1%80%d1%96%d0%b2%d0%bd%d1%8f-%d0%b7%d0%b0%d1%80%d0%be%d0%b1%d1%96%d1%82%d0%bd%d0%be%d1%97-%d0%bf%d0%bb%d0%b0%d1%82%d0%b8-%d0%bf%d1%80%d0%b0%d1%86%d1%96%d0%b2/)
-- 🎥 [Video presentation](https://www.youtube.com/watch?v=sHuVnKYKCFE)
+- 📄 [Стаття](https://www.observer.in.ua/2026/08/28/%d0%b0%d0%bd%d0%b0%d0%bb%d1%96%d0%b7-%d1%80%d1%96%d0%b2%d0%bd%d1%8f-%d0%b7%d0%b0%d1%80%d0%be%d0%b1%d1%96%d1%82%d0%bd%d0%be%d1%97-%d0%bf%d0%bb%d0%b0%d1%82%d0%b8-%d0%bf%d1%80%d0%b0%d1%86%d1%96%d0%b2/)
+- 🎥 [Відео презентація](https://www.youtube.com/watch?v=sHuVnKYKCFE)
 
 Отримані результати також були використані для розробки рекомендацій щодо зайнятості та розвитку людського капіталу.
 
